@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700;800&family=Roboto:wght@400;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: auto;
+  font-size: 16px;
+}
+:root{
+  --red:#d01c28;
+  --darkred:#5c0b10;
+  --gray:#2e2e2e;
+  --medium-light-gray:#545454;
+  --light-gray:#898888;
+  --padding-inline-section:20px;
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2.5rem;
+}
+h3{
+  font-size: 2rem;
+}
+p{
+  font-size: 1rem;
+}
+/* Utility Classes */
+.Button{
+  all: unset;
+  padding: 6px 20px;
+  background: var(--red);
+  height: 32px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  font-size: 1rem;
+}
+.Button:hover{
+  background: var(--darkred);
+}
+.SecondaryButton{
+  all: unset;
+  padding: 6px 20px;
+  height: 32px;
+  color: var(--gray);
+  border: 1px solid var(--gray);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  font-size: 1rem;
+}
+.SecondaryButton:hover{
+  background: var(--light-gray);
+  border: 1px solid var(--gray);
+  color: white;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.container{
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+  overflow: hidden;
+}
+.links{
+  display: block;
+  font-weight: 700;
+  color: #330033;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  position: relative;
+}
+.links::after{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #003366;
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  bottom: -5px;
+}
+.links:hover::after{
+  width: 100%;
+  
+}
+/* Navbar */
+nav{
+  justify-content: space-between;
+  height: 72px;
+}
+.navUl{
+  list-style: none;
+  gap: 24px;
+}
+/* Main Section */
+.main{
+  display: flex;
+  /* margin-top: 20px; */
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 72px);
+}
+.heading{
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 5rem;
+}
+.firsthalf{
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.text-content{
+  max-width: 400px;
+  color: var(--medium-light-gray);
+}
+.btnsection{
+  display: flex;
+  gap: 50px;
+}
+.small-text-content{
+  width: 70%;
+  color: var(--medium-light-gray);
+}
+.icons{
+  display: flex;
+  gap: 20px;
+  width: 30%;
+}
