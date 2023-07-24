@@ -1,0 +1,14 @@
+.contact-header h1{
+    font-weight: 700;
+}
+@media screen and (max-width:749px){
+    .contact-us-para{
+        display: none;
+    }
+    .contact-header h1{
+        text-align: center;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
