@@ -1,0 +1,84 @@
+.parent{
+    height: 100vh;
+    position: relative;
+}
+.child{
+    width: 400px;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px 40px;
+    background-color: #ffffffcc;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #2773a5;
+}
+.firsthalf{
+    display: flex;
+    border-radius: 10px 10px 0 0 ;
+    justify-content: space-between;
+}
+.firsthalf > div{
+    width: 40%;
+    text-align: center;
+    padding: 5px 0px;
+    /* border-radius: 10px; */
+    font-weight: bold;
+    font-size: 2rem;
+}
+.secondhalf{
+    margin-top: 20px;
+}
+.heading{
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2.6px;
+}
+.heading:hover{
+    color: var(--secondary-text-color);
+}
+.c1{
+    top: 100px;
+    left: 40px;
+}
+.c2{
+    bottom: 200px;
+    right: 50px;
+}
+.popupparent{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.521);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+.popupchild{
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #2773a5;
+    height: 150px;
+    width: 350px;
+}
+.popupchild > p{
+    position: absolute;
+    color: aliceblue;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+}
+.popupchild > button{
+    all: unset;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    padding: 8px 20px;
+    background-color: black;
+    border-radius: 3px;
+}
